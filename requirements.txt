@@ -1,0 +1,7 @@
+# Dépendances d'exécution du pipeline RAG Droit.
+# Le parsing des XML (stdlib pur) ne requiert aucune dépendance ;
+# seules l'ingestion et la recherche (Qdrant + API) en exigent.
+qdrant-client>=1.7
+httpx>=0.27
+fastapi>=0.111
+uvicorn[standard]>=0.30

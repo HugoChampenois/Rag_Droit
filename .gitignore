@@ -1,0 +1,59 @@
+# ===== Environnement Python =====
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ===== Données brutes : archives .tar.gz (volumineuses) =====
+archives_brutes/*.tar.gz
+
+# ===== Sources XML décompressées (2,5 M fichiers) =====
+sources_xml/legi/
+sources_xml/cass/
+sources_xml/capp/
+sources_xml/constit/
+sources_xml/jade/
+sources_xml/deltas/
+
+# ===== Sorties générées (corpus + vault) =====
+Vault_Obsidian/Codes/
+Vault_Obsidian/Lois/
+Vault_Obsidian/JP/
+Vault_Obsidian/Droit_Prive/
+Vault_Obsidian/Droit_Public/
+Vault_Obsidian/Droit_Penal/
+Vault_Obsidian/Autres/
+donnees_traitees/*.jsonl
+donnees_traitees/*.ingest_done
+donnees_traitees/legi_keep_ids.txt
+donnees_traitees/liens_jurisprudence.json
+
+# ===== Base vectorielle Qdrant =====
+qdrant_data/
+
+# ===== MAJ : données, état, journal (code + README conservés) =====
+maj/data/
+maj/state/
+maj/logs/
+
+# ===== Logs et fichiers temporaires =====
+*.log
+*.err
+*.part
+run_corpus.log
+run_jade.log
+run_regenerate.log
+run_chain.log
+
+# ===== Divers système =====
+lost+found/
+
+# ===== Secrets (jamais versionnés) =====
+.llm_key
+.env
+*.token
+.git-credentials
+
+# ===== Scripts d'exploitation locaux (notes personnelles, IP internes) =====
+lancer_embedding.sh
+rag_droit.migrate_sparse_offset

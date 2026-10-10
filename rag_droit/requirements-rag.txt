@@ -1,0 +1,5 @@
+# RAG Droit — module d'ingestion + recherche (à installer dans votre venv)
+qdrant-client>=1.7
+httpx>=0.27
+fastapi>=0.111
+uvicorn[standard]>=0.30
